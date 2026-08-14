@@ -1,0 +1,33 @@
+name: Update APT repository
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "pool/**"
+      - "repo.sh"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    if: github.actor != 'github-actions[bot]'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install repository tools
+        run: sudo apt-get update && sudo apt-get install -y apt-utils bzip2 xz-utils zstd
+
+      - name: Generate indexes
+        run: bash repo.sh
+
+      - name: Commit generated metadata
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Packages Packages.gz Packages.bz2 Packages.xz Packages.zst Release
+          git diff --cached --quiet || git commit -m "Update APT repository metadata"
+          git push

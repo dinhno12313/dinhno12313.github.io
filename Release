@@ -1,0 +1,33 @@
+Architectures: iphoneos-arm64
+Codename: ios
+Components: main
+Date: Fri, 14 Aug 2026 20:27:04 +0000
+Description: dinhnguyenx tweak repository for rootless iOS jailbreaks
+Label: dinhnguyenx Repo
+Origin: dinhnguyenx
+Suite: stable
+Version: 1.0
+MD5Sum:
+ cf2039849e028042852a498a2168bc14              708 Packages
+ 5ef16e8f6b56d0d519b8c8e9ed5129a8              497 Packages.gz
+ 9b35cf54a123aca622842c7a1605bcc3              538 Packages.bz2
+ d3d4874efbcd2d1d850e2b8f21035950              572 Packages.xz
+ 2c5acfb5409a7f6bbde2797c32713ba5              495 Packages.zst
+SHA1:
+ 4de865f8a14ca4977138d7d5ef02a3c5e480a1c2              708 Packages
+ 1c558dec7e7517e1c8c74871162c13fa54171cdb              497 Packages.gz
+ f0110b34ae345e46942906f7e841231f74547ccd              538 Packages.bz2
+ d890032149b7141af13790cd2792315fbb7cbd7c              572 Packages.xz
+ 8a1c004c81f316a05eb76e3b83def0ab5358f8a8              495 Packages.zst
+SHA256:
+ 9e28b905184946ce8507e34c325b9bd6d51e7b85a62f093cc6061009955949f1              708 Packages
+ 4804140a3454907a5cf6819fde7b9b1b254d0acd4dd6a4e2d15bc1bd95149104              497 Packages.gz
+ 6fd2d2d48b6a2b89fc26b4fb8121c60c276c2b1a11a24bf82b59e09b766073af              538 Packages.bz2
+ 5635bd97955b8e7233ba391d34e6a4c07d7f0182c8a089ceb67b153e7d191447              572 Packages.xz
+ b12726fa67432d4b83f090739277229af7720240750adc8d99bf8045d386ac46              495 Packages.zst
+SHA512:
+ 99e197a356739e6128b8da64957b536fbe3cad64369ae9a00c9393136860fe4fa39420b2a408940239a6e78dade055fe892fcfb41bbb94f8c6533a99b3d73779              708 Packages
+ c53b8b05f80658e78a00478e455b22bb35203bfe81b547ef1a1b7d786860890d24f8abb46051b9825471386c89eeb409150e5b11427ae34653cfa4fbf4032abc              497 Packages.gz
+ 36081d46de17a72e334f41ea4476ccfacf2be80f335ac40e3bae9ca2b6bcc9b69e6cb6bad828c327502244147be801bc73bfc4b4bbc4f072ced4385250ebc3b7              538 Packages.bz2
+ bd21c1e1f6b753ea08ddf3d775e679878282a3a743e8d9d1804d2e4405dc75601b81c5867240116db9952e9e6010541aef0e7a09357a75e7c0e3bfd75175b504              572 Packages.xz
+ c79fac1dc85dcb0531f732c300a9d139021ea6d5d5992fbe9d56b5f5ba68f55d153c93090ca76e9648220fb7834233761acbb3bfc9f1ff9dd518cc5768f49877              495 Packages.zst
