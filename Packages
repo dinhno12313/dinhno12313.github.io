@@ -15,3 +15,20 @@ Description: Keeps Zone's animated Sleep stage from being overwritten by AOD pro
 Name: ZoneAODFix
 Author: dinhnguyenx
 
+Package: com.dinhnguyenx.zoneaodfix
+Architecture: iphoneos-arm64
+Version: 0.1.6
+Section: Tweaks
+Maintainer: dinhnguyenx
+Installed-Size: 76
+Depends: firmware (>= 16.0), mobilesubstrate (>= 0.9.5000)
+Filename: ./pool/com.dinhnguyenx.zoneaodfix_0.1.6_iphoneos-arm64.deb
+Size: 7564
+MD5sum: db413211231b4c846bd11a8f02440724
+SHA1: 75f8f1838255e3563b5d20c4bb80641af63f4e6e
+SHA256: 273da8e34daa2a497030ceac225c010ac76d0eddd2a1a7fbf808621197fd0213
+SHA512: 22a3a94d17f43f406e9cbb9ef409ee7b56ebb2e9ceb883e141064dfbcbbdaf5937632d933477ed4455f616efa8e555176ac330f9790771dd7b5142c098a8f682
+Description: Keeps Zone's animated Sleep stage from being overwritten by AOD progress scrubbing.
+Name: ZoneAODFix
+Author: dinhnguyenx
+
