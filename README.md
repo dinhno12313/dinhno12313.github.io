@@ -27,6 +27,7 @@ pool/                   Installable .deb packages
 data/packages.json      Package catalog shown on the website
 assets/css/style.css    Shared visual styles
 assets/js/app.js        Catalog, search, and package-detail rendering
+assets/images/          Optional logo and package artwork
 index.html              Repository landing page
 package.html            Reusable package-detail page
 repo.sh                 APT index generator
@@ -41,3 +42,17 @@ To publish a new tweak or version:
 GitHub Actions automatically regenerates `Packages`, its compressed variants,
 and `Release` when files under `pool/` change. To generate them manually, run
 `./repo.sh` on Debian/Ubuntu with `apt-ftparchive`, `zstd`, `xz`, and `bzip2`.
+
+## Custom logo
+
+Put a square PNG, JPG, or WebP file in the repository, for example
+`assets/images/logo.png`, then set `repository.logoUrl` in
+`data/packages.json`:
+
+```json
+"brandMark": "d",
+"logoUrl": "assets/images/logo.png"
+```
+
+Leave `logoUrl` empty to use `brandMark` as the fallback. If the image cannot
+be loaded, the fallback is restored automatically.

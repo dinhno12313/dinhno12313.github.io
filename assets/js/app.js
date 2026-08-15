@@ -49,7 +49,31 @@ const loadCatalog = async () => {
   return response.json();
 };
 
+const applyBrandMark = (repository) => {
+  const fallback = repository.brandMark?.trim() || "d";
+  const logoUrl = repository.logoUrl?.trim();
+
+  document.querySelectorAll("[data-brand-mark]").forEach((mark) => {
+    mark.classList.remove("has-image");
+    mark.textContent = fallback;
+
+    if (!logoUrl) return;
+
+    const image = document.createElement("img");
+    image.src = logoUrl;
+    image.alt = "";
+    image.addEventListener("error", () => {
+      mark.classList.remove("has-image");
+      mark.textContent = fallback;
+    });
+
+    mark.classList.add("has-image");
+    mark.replaceChildren(image);
+  });
+};
+
 const applyRepositoryData = (repository, packageCount) => {
+  applyBrandMark(repository);
   document.querySelectorAll("[data-repository-url]").forEach((element) => {
     element.textContent = repository.url;
   });

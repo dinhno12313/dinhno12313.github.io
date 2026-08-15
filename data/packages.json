@@ -2,6 +2,8 @@
   "repository": {
     "name": "dinhnguyenx Repo",
     "description": "Carefully scoped jailbreak tweaks for modern rootless devices.",
+    "brandMark": "d",
+    "logoUrl": "",
     "url": "https://dinhno12313.github.io/",
     "sileoUrl": "sileo://source/https://dinhno12313.github.io/",
     "githubUrl": "https://github.com/dinhno12313"
