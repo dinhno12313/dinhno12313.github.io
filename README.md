@@ -30,6 +30,7 @@ assets/js/app.js        Catalog, search, and package-detail rendering
 assets/images/          Optional logo and package artwork
 index.html              Repository landing page
 package.html            Reusable package-detail page
+CydiaIcon*.png          Source icon used by Sileo/Cydia
 repo.sh                 APT index generator
 ```
 
