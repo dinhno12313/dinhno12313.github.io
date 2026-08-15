@@ -3,26 +3,95 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="dinhnguyenx APT repository for Sileo">
+  <meta name="theme-color" content="#080a0f">
+  <meta name="description" content="Rootless iOS jailbreak tweaks by dinhnguyenx">
   <title>dinhnguyenx Repo</title>
-  <style>
-    :root { color-scheme: dark; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
-    body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #0b1020; color: #f5f7ff; }
-    main { width: min(560px, calc(100% - 40px)); padding: 36px; border: 1px solid #29324f; border-radius: 24px; background: #141b31; box-shadow: 0 24px 80px #0008; }
-    h1 { margin: 0 0 12px; font-size: 2rem; }
-    p { color: #bec8e5; line-height: 1.6; }
-    code { display: block; margin: 20px 0; padding: 14px; overflow-wrap: anywhere; border-radius: 12px; background: #090d19; color: #dce5ff; }
-    a.button { display: inline-block; margin-right: 10px; padding: 12px 18px; border-radius: 12px; background: #5d7cff; color: white; text-decoration: none; font-weight: 650; }
-    a.secondary { background: #252e49; }
-  </style>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="assets/js/app.js" defer></script>
 </head>
-<body>
+<body data-page="home">
+  <a class="skip-link" href="#packages">Skip to packages</a>
+
+  <header class="site-header">
+    <a class="brand" href="./" aria-label="dinhnguyenx Repo home">
+      <span class="brand-mark" aria-hidden="true">d</span>
+      <span>dinhnguyenx</span>
+    </a>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="#packages">Packages</a>
+      <a data-github-url href="https://github.com/dinhno12313">GitHub</a>
+    </nav>
+  </header>
+
   <main>
-    <h1>dinhnguyenx Repo</h1>
-    <p>Install rootless iOS jailbreak tweaks through Sileo.</p>
-    <code>https://dinhno12313.github.io/</code>
-    <a class="button" href="sileo://source/https://dinhno12313.github.io/">Add to Sileo</a>
-    <a class="button secondary" href="https://github.com/dinhno12313">GitHub</a>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span>Rootless iOS repository</p>
+        <h1 id="hero-title">Small tweaks.<br><span>Native feel.</span></h1>
+        <p class="hero-description" data-repository-description>
+          Carefully scoped jailbreak tweaks for modern rootless devices.
+        </p>
+        <div class="hero-actions">
+          <a class="button button-primary" data-sileo-url href="sileo://source/https://dinhno12313.github.io/">Add to Sileo</a>
+          <a class="button button-secondary" href="#packages">Browse packages</a>
+        </div>
+      </div>
+
+      <aside class="source-card" aria-label="Repository source">
+        <div class="source-card-heading">
+          <span>Repository URL</span>
+          <span class="source-state">Online</span>
+        </div>
+        <code data-repository-url>https://dinhno12313.github.io/</code>
+        <button class="copy-button" type="button" data-copy-repository>Copy source</button>
+        <dl class="repository-stats">
+          <div>
+            <dt>Packages</dt>
+            <dd data-package-count>—</dd>
+          </div>
+          <div>
+            <dt>Platform</dt>
+            <dd>Rootless</dd>
+          </div>
+          <div>
+            <dt>Manager</dt>
+            <dd>Sileo</dd>
+          </div>
+        </dl>
+      </aside>
+    </section>
+
+    <section class="catalog" id="packages" aria-labelledby="packages-title">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Available now</p>
+          <h2 id="packages-title">Packages</h2>
+        </div>
+        <label class="search-field">
+          <span class="sr-only">Search packages</span>
+          <input type="search" placeholder="Search packages" autocomplete="off" data-package-search>
+        </label>
+      </div>
+
+      <div class="package-grid" data-package-grid aria-live="polite">
+        <article class="package-card package-card-loading" aria-label="Loading packages">
+          <div class="loading-line loading-title"></div>
+          <div class="loading-line"></div>
+          <div class="loading-line loading-short"></div>
+        </article>
+      </div>
+      <p class="empty-state" data-empty-state hidden>No package matches your search.</p>
+      <noscript>
+        <p class="empty-state">JavaScript is required to display the package catalog.</p>
+      </noscript>
+    </section>
   </main>
+
+  <footer class="site-footer">
+    <p>Built for rootless iOS.</p>
+    <p>© <span data-current-year></span> dinhnguyenx</p>
+  </footer>
+
+  <div class="toast" role="status" aria-live="polite" data-toast></div>
 </body>
 </html>

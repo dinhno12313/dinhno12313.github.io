@@ -20,4 +20,24 @@ The tweak source code is available at [dinhno12313/ZoneAODFix](https://github.co
 
 ## Updating the repository
 
-Place new `.deb` files in `pool/`, then run `./repo.sh` on a Debian/Ubuntu environment with `apt-ftparchive`, `zstd`, `xz`, and `bzip2` installed. GitHub Actions also regenerates the indexes automatically when packages under `pool/` change.
+The APT metadata and the browser UI are intentionally separate:
+
+```text
+pool/                   Installable .deb packages
+data/packages.json      Package catalog shown on the website
+assets/css/style.css    Shared visual styles
+assets/js/app.js        Catalog, search, and package-detail rendering
+index.html              Repository landing page
+package.html            Reusable package-detail page
+repo.sh                 APT index generator
+```
+
+To publish a new tweak or version:
+
+1. Put the new `.deb` file in `pool/`.
+2. Add or update its entry in `data/packages.json`.
+3. Push both files to `main`.
+
+GitHub Actions automatically regenerates `Packages`, its compressed variants,
+and `Release` when files under `pool/` change. To generate them manually, run
+`./repo.sh` on Debian/Ubuntu with `apt-ftparchive`, `zstd`, `xz`, and `bzip2`.

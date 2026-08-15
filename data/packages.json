@@ -1,0 +1,45 @@
+{
+  "repository": {
+    "name": "dinhnguyenx Repo",
+    "description": "Carefully scoped jailbreak tweaks for modern rootless devices.",
+    "url": "https://dinhno12313.github.io/",
+    "sileoUrl": "sileo://source/https://dinhno12313.github.io/",
+    "githubUrl": "https://github.com/dinhno12313"
+  },
+  "packages": [
+    {
+      "slug": "zoneaodfix",
+      "name": "ZoneAODFix",
+      "identifier": "com.dinhnguyenx.zoneaodfix",
+      "version": "0.1.6",
+      "section": "Tweaks",
+      "architecture": "iphoneos-arm64",
+      "description": "Keeps Zone's animated Sleep stage visible during Always-On Display instead of letting progress updates restore the Locked wallpaper.",
+      "compatibility": "iOS 16.0 or later · Rootless jailbreak",
+      "tested": "Tested on iPhone 14 Pro · iOS 16.1 · Dopamine",
+      "badges": ["Rootless", "arm64e", "AOD"],
+      "sourceUrl": "https://github.com/dinhno12313/ZoneAODFix",
+      "downloadUrl": "pool/com.dinhnguyenx.zoneaodfix_0.1.6_iphoneos-arm64.deb",
+      "featured": true,
+      "changelog": [
+        {
+          "version": "0.1.6",
+          "date": "2026-08-15",
+          "changes": [
+            "Consolidated Zone transition handling without changing the confirmed AOD fix.",
+            "Removed diagnostic-only parser hooks and reduced runtime logging.",
+            "Improved safe hook installation and retry handling."
+          ]
+        },
+        {
+          "version": "0.1.5",
+          "date": "2026-08-14",
+          "changes": [
+            "Prevented Zone progress scrubbing from overwriting the Sleep wallpaper during AOD.",
+            "Restored the Locked transition when the display wakes."
+          ]
+        }
+      ]
+    }
+  ]
+}
