@@ -14,9 +14,13 @@ https://dinhno12313.github.io/
 
 ## Packages
 
+- CCShortcutLauncher 1.3.0 (`iphoneos-arm64`)
 - ZoneAODFix 0.1.6 (`iphoneos-arm64`)
 
-The tweak source code is available at [dinhno12313/ZoneAODFix](https://github.com/dinhno12313/ZoneAODFix).
+Source code:
+
+- [dinhno12313/CCShortcutLauncher](https://github.com/dinhno12313/CCShortcutLauncher)
+- [dinhno12313/ZoneAODFix](https://github.com/dinhno12313/ZoneAODFix)
 
 ## Updating the repository
 

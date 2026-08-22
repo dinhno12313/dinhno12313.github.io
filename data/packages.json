@@ -10,6 +10,34 @@
   },
   "packages": [
     {
+      "slug": "ccshortcutlauncher",
+      "name": "CCShortcutLauncher",
+      "identifier": "com.dinhnguyenx.ccshortcutlauncher",
+      "version": "1.3.0",
+      "section": "Control Center (Modules)",
+      "architecture": "iphoneos-arm64",
+      "description": "Loads My Shortcuts into an ordered Control Center popup and runs the selected Shortcut in the background without opening the Shortcuts app.",
+      "compatibility": "iOS 16.x · Dopamine rootless jailbreak",
+      "tested": "Validated on iOS 16 with Dopamine. Requires CCSupport and PreferenceLoader.",
+      "badges": ["Rootless", "iOS 16", "CCSupport"],
+      "iconUrl": "assets/images/ccshortcutlauncher.png",
+      "sourceUrl": "https://github.com/dinhno12313/CCShortcutLauncher",
+      "downloadUrl": "pool/com.dinhnguyenx.ccshortcutlauncher_1.3.0_iphoneos-arm64.deb",
+      "featured": true,
+      "changelog": [
+        {
+          "version": "1.3.0",
+          "date": "2026-08-22",
+          "changes": [
+            "Added an ordered popup for launching cached My Shortcuts directly from Control Center.",
+            "Added manual catalog loading and popup list management in Settings.",
+            "Added native Shortcut glyph and color rendering in Settings and the Control Center popup.",
+            "Runs supported Shortcuts in the background without foregrounding the Shortcuts app."
+          ]
+        }
+      ]
+    },
+    {
       "slug": "zoneaodfix",
       "name": "ZoneAODFix",
       "identifier": "com.dinhnguyenx.zoneaodfix",

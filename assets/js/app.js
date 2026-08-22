@@ -12,6 +12,14 @@ const packageInitials = (name) => name
   .slice(0, 2)
   .toUpperCase();
 
+const packageIconMarkup = (item) => {
+  if (item.iconUrl) {
+    return `<span class="package-icon has-image" aria-hidden="true"><img src="${escapeHtml(item.iconUrl)}" alt=""></span>`;
+  }
+
+  return `<span class="package-icon" aria-hidden="true">${escapeHtml(packageInitials(item.name))}</span>`;
+};
+
 const showToast = (message) => {
   const toast = document.querySelector("[data-toast]");
   if (!toast) return;
@@ -108,7 +116,7 @@ const packageCard = (item) => {
       item.badges.join(" ")
     ].join(" ").toLowerCase())}">
       <div class="package-card-top">
-        <span class="package-icon" aria-hidden="true">${escapeHtml(packageInitials(item.name))}</span>
+        ${packageIconMarkup(item)}
         <span class="version-pill">v${escapeHtml(item.version)}</span>
       </div>
       <h3><a href="${detailsUrl}">${escapeHtml(item.name)}</a></h3>
@@ -190,7 +198,7 @@ const renderPackage = (catalog) => {
     <div class="detail-hero">
       <section class="detail-main">
         <div class="detail-heading">
-          <span class="package-icon" aria-hidden="true">${escapeHtml(packageInitials(item.name))}</span>
+          ${packageIconMarkup(item)}
           <div>
             <h1>${escapeHtml(item.name)}</h1>
             <p class="package-identifier">${escapeHtml(item.identifier)}</p>

@@ -468,6 +468,19 @@ h2 {
   letter-spacing: -0.02em;
 }
 
+.package-icon.has-image {
+  overflow: hidden;
+  padding: 0;
+  background: var(--surface-raised);
+}
+
+.package-icon img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .version-pill,
 .badge {
   display: inline-flex;
